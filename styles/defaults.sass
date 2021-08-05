@@ -1,0 +1,212 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary
+  display: block
+
+audio, canvas, video
+  display: inline-block
+
+audio:not([controls])
+  display: none
+  height: 0
+
+[hidden]
+  display: none
+
+html
+  font-family: sans-serif
+  -ms-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%
+  font-family: 'Barlow Condensed', sans-serif
+  -ms-overflow-style: none
+  // scroll-behavior: smooth
+  // ::-webkit-scrollbar
+  //   display: none
+
+  @media not screen and (-webkit-min-device-pixel-ratio: 2), not screen and (   min--moz-device-pixel-ratio: 2),not screen and (     -o-min-device-pixel-ratio: 2/1), not screen and (        min-device-pixel-ratio: 2), not screen and (                min-resolution: 192dpi), not screen and (                min-resolution: 2dppx)
+    -webkit-font-smoothing: antialiased
+    text-rendering: optimizeLegibility
+
+body
+  margin: 0
+  background: black
+  -ms-overflow-style: none
+  ::-webkit-scrollbar
+    width: 0 !important
+a
+  &:focus
+    outline: thin dotted
+
+  &:active, &:hover
+    outline: 0
+
+h1
+  font-size: 2em
+  margin: 0.67em 0
+
+abbr[title]
+  border-bottom: 1px dotted
+
+b, strong
+  font-weight: bold
+
+dfn
+  font-style: italic
+
+hr
+  -moz-box-sizing: content-box
+  box-sizing: content-box
+  height: 0
+
+mark
+  background: #ff0
+  color: #000
+
+code, kbd, pre, samp
+  font-family: monospace, serif
+  font-size: 1em
+
+pre
+  white-space: pre-wrap
+
+q
+  quotes: "“" "”" "‘" "’"
+
+small
+  font-size: 80%
+
+sub
+  font-size: 75%
+  line-height: 0
+  position: relative
+  vertical-align: baseline
+
+sup
+  font-size: 75%
+  line-height: 0
+  position: relative
+  vertical-align: baseline
+  top: -0.5em
+
+sub
+  bottom: -0.25em
+
+img
+  border: 0
+
+svg:not(:root)
+  overflow: hidden
+
+figure
+  margin: 0
+
+fieldset
+  border: 1px solid #c0c0c0
+  margin: 0 2px
+  padding: 0.35em 0.625em 0.75em
+
+legend
+  border: 0
+  padding: 0
+
+button, input, select, textarea
+  font-family: inherit
+  font-size: 100%
+  margin: 0
+
+button, input
+  line-height: normal
+
+button, select
+  text-transform: none
+
+button, html input[type="button"]
+  -webkit-appearance: button
+  cursor: pointer
+
+input
+  &[type="reset"], &[type="submit"]
+    -webkit-appearance: button
+    cursor: pointer
+
+button[disabled], html input[disabled]
+  cursor: default
+
+input
+  &[type="checkbox"], &[type="radio"]
+    box-sizing: border-box
+    padding: 0
+
+  &[type="search"]
+    -webkit-appearance: textfield
+    -moz-box-sizing: content-box
+    -webkit-box-sizing: content-box
+    box-sizing: content-box
+
+    &::-webkit-search-cancel-button, &::-webkit-search-decoration
+      -webkit-appearance: none
+
+button::-moz-focus-inner, input::-moz-focus-inner
+  border: 0
+  padding: 0
+
+textarea
+  overflow: auto
+  vertical-align: top
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+*
+  box-sizing: border-box
+
+  &::after, &::before
+    box-sizing: border-box
+
+body
+  margin: 0
+  scroll-snap-type: y proximity
+
+main
+  scroll-snap-type: y proximity
+  overflow-x: hidden
+  section
+    scroll-snap-align: start
+
+.locked
+  overflow: hidden
+
+#progressbar
+  --progress: 0
+  position: fixed
+  left: 50%
+  transform: translateX(calc(-50% - 40px))
+  width: calc((var(--container-width) * 1px) - 100px)
+  bottom: 2vh
+  height: 2px
+  z-index: 100
+  border-radius: 3px
+  background: rgba(#fff, 0.1)
+  pointer-events: none
+  &:not(.active)
+    opacity: 0
+  @media (min-width: 320px) and (max-width: 540px)
+    width:  calc(100% - 80px)
+    left: 5vw
+    transform: translateX(0)
+    bottom: 20px
+  &:before
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    transform: scale3d(var(--progress), 1, 1)
+    background: rgba(#fff, 0.3)
+    border-radius: 3px
+    content: ''
+    transition: transform var(--move) 0.2s
+    transform-origin: 0 0
+
+
+.margin-t-40
+  margin-top: 75px

@@ -1,0 +1,86 @@
+.scene
+    position: relative
+
+[class$="pin-spacer"]
+    display: block !important
+    pointer-events: none
+
+[data-hideon]
+    transition: 0.1s opacity linear
+    transition: 0.2s opacity var(--enter)
+    pointer-events: none
+
+.chapter
+    position: relative
+
+    // &:not(:nth-child(1))
+    //     content-visibility: auto
+    //     contain-intrinsic-size: 100vh
+    &:not(.depoiment)
+        min-height: 100vh
+    .stage-wrapper
+        position: relative
+        height: 100vh
+        overflow: hidden
+        transition: 0.1s opacity linear
+        transition: 0.2s opacity var(--enter)
+        &:not(.current)
+            opacity: 0
+    .stage
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+        height: 100vh
+        width: auto
+        transition: 0.2s opacity linear
+        transition: 0.2s opacity var(--enter)
+        @media (min-width: 320px) and (max-width: 480px)
+            min-width: 100vw
+    .placeholder
+        position: relative
+        height: 100vh
+        width: 100vw
+    .gallery
+        position: relative
+        z-index: 2
+
+.ozier-facebook-post
+    margin: 0 auto
+    display: flex
+    justify-content: center
+    align-items: center
+    will-change: transform
+    img
+        display: block
+        margin: 0 auto
+        max-width: 720px
+        width: 100%
+        height: auto
+        width: calc(100vw - 40px)
+        -webkit-mask-image: linear-gradient(to top, transparent 3%, black 95%)
+        mask-image: linear-gradient(to top, transparent 3%, black 95%)
+
+.jessica-posts
+    .facebook-post
+        position: relative
+        min-height: 100vh
+        picture
+            display: block
+            height: 100vh
+            display: flex
+            align-items: center
+            justify-content: center
+            will-change: transform
+        img
+            display: block
+            margin: 0 auto
+            max-width: 540px
+            height: auto
+            width: calc(100vw - 40px)
+
+    .lettering
+        position: relative
+        display: block
+        &-item
+            min-height: 100vh

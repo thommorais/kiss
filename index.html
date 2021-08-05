@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>RBS - KISS</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link preload rel="stylesheet" href="./styles/index.sass" />
+</head>
+
+<body>
+    <main>
+        <header class="chapter" data-chapter="one">
+            <div class="video intro">
+                <div class="video-wrapper">
+                    <video muted='muted' preload="auto" playsinline>
+                        <source src="{{{ cdn }}}/desktop/chapter-1/abertura.webm"
+                            type='video/webm; codecs="vp8, vorbis"' media="screen and (min-width:720px)" />
+                        <source src="{{{ cdn }}}/desktop/chapter-1/abertura.mp4"
+                            media="screen and (min-width:720px)" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                        <source src="{{{ cdn }}}/mobile/chapter-1/abertura.webm"
+                            media="screen and (max-width:719px)" type='video/webm; codecs="vp8, vorbis"' />
+                        <source src="{{{ cdn }}}/mobile/chapter-1/abertura.mp4"
+                            media="screen and (max-width:719px)" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                    </video>
+
+                    <div class="lettering-intro" data-hideon="80">
+                        <div class="lettering-wrp">
+                            <h1>
+                                <span>Precisamos seguir em</span>
+                                <strong>Frente</strong>
+                            </h1>
+                            <p class="intro-copy">
+                                Como uma família dilacerada pela tragédia da boate Kiss encontrou forças para recomeçar
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="stage-wrapper">
+                <div class="placeholder">
+                    <canvas class="stage" data-scene="chapter-1"></canvas>
+                </div>
+                <div class="legends legends-chapter-1">
+
+                    <div class="legend legend-item" data-posy="bottom" data-posx="left" data-time="230,250">
+                        <h3 class="legend-title">
+                            <span class="text-selection">
+                                Ogier de Vargas Rosado
+                            </span>
+                        </h3>
+                        <div class="legend-body">
+                            <p>
+                                <span class="text-selection">58 anos</span>
+                            </p>
+                            <p>
+                                <span class="text-selection">Bacharel em Turismo</span>
+                            </p>
+                            <p>
+                                <span class="text-selection">Casado com Lilia</span>
+                            </p>
+                            <p>
+                                <span class="text-selection">Pai de Jéssica e de Vinícius</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="legend legend-item" data-posy="bottom" data-posx="middle" data-time="260,280">
+                        <h3 class="legend-title">
+                            <span class="text-selection">
+                                Lilia Maria Montardo Rosado
+                            </span>
+                        </h3>
+                        <div class="legend-body">
+                            <p>
+                                <span class="text-selection">
+                                    61 anos
+                                </span>
+                            </p>
+                            <p>
+                                <span class="text-selection">
+                                    Comerciante
+                                </span>
+                            </p>
+                            <p>
+                                <span class="text-selection">
+                                    Casada com Ogier
+                                </span>
+                            </p>
+                            <p>
+                                <span class="text-selection">
+                                    Mãe de Jéssica e de Vinícius
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="legend legend-item" data-posy="bottom" data-posx="right" data-time="290,310">
+                        <h3 class="legend-title">
+                            <span class="text-selection">
+                                Jéssica Montardo Rosado
+                            </span>
+                        </h3>
+                        <div class="legend-body">
+                            <p>
+                                <span class="text-selection">31 anos</span>
+                            </p>
+                            <p>
+                                <span class="text-selection">
+                                    Sobrevivente do incêndio na Kiss
+                                </span>
+                            </p>
+                            <p>
+                                <span class="text-selection">Empresária</span>
+                            </p>
+                            <p>
+                                <span class="text-selection">
+                                    Filha de Ogier e de Lilia
+                                </span>
+                            </p>
+                            <p>
+                                <span class="text-selection">
+                                    Irmã de Vinícius
+                                </span>
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="legend legend-item" data-posy="bottom" data-posx="right" data-time="400,450">
+                        <h3 class="legend-title">
+                            <span class="text-selection">
+                                Vinícius Montardo Rosado
+                            </span>
+                        </h3>
+                        <div class="legend-body">
+                            <p>
+                                <span class="text-selection">
+                                    26 anos
+                                </span>
+                            </p>
+                            <p>
+                                <span class="text-selection">
+                                    Morto no incêndio na boate Kiss
+                                </span>
+                            </p>
+                            <p>
+                                <span class="text-selection">Filho de Ogier e de Lilia</span>
+                            </p>
+                            <p>
+                                <span class="text-selection">
+                                    Irmão de Jéssica
+                                </span>
+                            </p>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="chapter" data-chapter="two">
+            <header class="chapter-text lettering">
+                <div class="lettering-item lettering-title">
+                    <h2 class="chapter-text-helper upper">26 de janeiro de 2013</h2>
+                    <h1 class="chapter-text-title upper">horas antes da tragédia</h1>
+                </div>
+            </header>
+            <div class="stage-wrapper">
+                <div class="placeholder">
+                    <canvas class="stage" data-scene="chapter-2"></canvas>
+                </div>
+                <div class="legends">
+                    <div class="legend legend-item" data-posy="bottom" data-posx="left" data-time="40,110">
+                        <h3 class="legend-title"><span class="text-selection">12h</span></h3>
+                        <div class="legend-body">
+                            <p>
+                                <span class="text-selection">
+                                    A família Montardo Rosado se reúne com
+                                    amigos para um churrasco nos fundos de
+                                    casa. Como de costume, Ogier é o assador.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="legend legend-item custom-top" data-posy="bottom" data-posx="left" data-time="126,179">
+                        <h3 class="legend-title"><span class="text-selection">15h</span></h3>
+                        <div class="legend-body">
+                            <p>
+                                <span class="text-selection">
+                                    O grupo senta à frente da casa para
+                                    conversar. Ali, os os irmãos Jéssica e Vinicius combinam
+                                    a saída na noite daquele sábado.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="legend legend-item custom-bottom" data-posy="bottom" data-posx="left" data-time="128,179">
+                        <div class="legend-body">
+                            <span class="text-selection">
+                                Destino: boate Kiss.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="legend legend-item" data-posy="top" data-posx="left" data-time="190,218">
+                        <h3 class="legend-title">
+                            <span class="text-selection">23h30min</span></h3>
+                        <div class="legend-body">
+                            <p>
+                                <span class="text-selection">
+                                    Vinícius faz a barba e veste a
+                                    camisa passada pela mãe. "Não bebe
+                                    muito, Vini. Cuida dos guris", pede Lilia.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="chapter" data-chapter="three">
+
+            <div class="stage-wrapper">
+                <div class="placeholder">
+                    <canvas class="stage" data-scene="chapter-3"></canvas>
+                </div>
+                <div class="legends">
+                    <div class="legend legend-item" data-posy="bottom" data-posx="left" data-time="29,70">
+                        <h3 class="legend-title">
+                            <span class="text-selection">
+                                0h30min
+                            </span>
+                        </h3>
+                        <div class="legend-body">
+                            <p>
+                                <span class="text-selection">
+                                    Os irmãos saem de casa a pé.
+                                    <br />
+                                    Caminham por 10 minutos.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="legend legend-item" data-posy="bottom" data-posx="left" data-time="107,120"
+                        data-desktime="135,180">
+                        <div class="legend-body">
+                            <p>
+                                <span class="text-selection">
+                                    Encontram fila na boate e pensam em desistir.
+                                    <br />
+                                    São reconhecidos pelo segurança e convidados a entrar.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="chapter" data-chapter="four">
+            <header class="chapter-text lettering">
+                <div class="lettering-item">
+                    <h1 class="chapter-text-title upper">A tragédia</h1>
+                </div>
+                <div class="lettering-item">
+                    <h2 class="chapter-text-helper bold">2h30min</h2>
+                    <p class="chapter-text-copy">
+                        Na festa, mais de mil jovens, em sua
+                        maioria universitários, dançam ao
+                        som da banda Gurizada Fandangueira.
+                    </p>
+                </div>
+
+                <div class="lettering-item">
+
+                    <p class="chapter-text-copy">
+                        Durante o show, um dos músicos aciona um artefato pirotécnico.
+                        As faíscas chegam ao teto.
+                    </p>
+
+                    <br />
+
+                    <p class="chapter-text-copy">
+                        Em segundos, o fogo se alastra
+                        pela espuma de isolamento acústico,
+                        destilando veneno mortal.
+                    </p>
+
+
+                </div>
+
+            </header>
+
+            <div class="stage-wrapper">
+                <div class="placeholder">
+                    <canvas class="stage" data-scene="chapter-4"></canvas>
+                </div>
+                <div class="legends">
+                    <span class="media-credits legend legend-item" data-time="5,20">Imagens Germano Rorato e Luciano
+                        Souza</span>
+                    <div class="legend legend-item" data-posy="bottom" data-posx="middle" data-time="1,90">
+                        <div class="legend-body center chapter-text">
+                            <p class="chapter-text-copy">
+                                <span class="text-selection">O extintor de incêndio falha.</span></p>
+                            <p class="chapter-text-copy">
+                                <span class="text-selection">A confusão se instala.</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="legend legend-item" data-posy="bottom" data-posx="middle" data-time="95,175">
+                        <div class="legend-body center chapter-text">
+                            <p class="chapter-text-copy">
+                                <span class="text-selection">Os irmãos Jéssica e Vinicius estavam em locais distintos dentro da boate</span></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="mosaic">
+                <div class="grid-mosaic grid">
+                    <div class="mosaic-item centered mosaic-video">
+                        <video autoplay muted playsinline preload="none" loop>
+                            <source data-desktop="{{{ cdn }}}/desktop/mosaic/video-15-mosaico.webm"
+                                type='video/webm; codecs="vp8, vorbis"' />
+                            <source data-desktop="{{{ cdn }}}/desktop/mosaic/video-15-mosaico.mp4"
+                                type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                        </video>
+                        <span class="media-credits">DIVULGAÇÃO POLÍCIA CIVIL</span>
+                    </div>
+                    <picture class="mosaic-item lazy">
+
+                        <source data-srcset="{{{ cdn }}}/desktop/mosaic/1-mosaico.webp"
+                            media="(min-width: 600px)" type="image/webp" />
+                        <source data-srcset="{{{ cdn }}}/desktop/mosaic/1-mosaico.jpg"
+                            media="(min-width: 600px)" type="image/jpeg" />
+                        <source data-srcset="{{{ cdn }}}/mobile/mosaic/1-mosaico.webp"
+                            media="(min-width: 200px)" type="image/webp" />
+                        <source data-srcset="{{{ cdn }}}/mobile/mosaic/1-mosaico.jpg"
+                            media="(min-width: 200px)" type="image/jpeg" />
+                        <img class="lazyload" height="1080" width="1194" role="presentation"
+                            data-src="{{{ cdn }}}/desktop/mosaic/1-mosaico.jpg"
+                            src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 1080 1194'%2F%3E" />
+                        <span class="media-credits">FOTOS GERMANO RORATO</span>
+                    </picture>
+
+                    <picture class="mosaic-item lazy">
+                        <source data-srcset="{{{ cdn }}}/desktop/mosaic/2-mosaico.webp"
+                            media="(min-width: 600px)" type="image/webp" />
+                        <source data-srcset="{{{ cdn }}}/desktop/mosaic/2-mosaico.jpg"
+                            media="(min-width: 600px)" type="image/jpeg" / />
+                        <source data-srcset="{{{ cdn }}}/mobile/mosaic/2-mosaico.webp"
+                            media="(min-width: 200px)" type="image/webp" />
+                        <source data-srcset="{{{ cdn }}}/mobile/mosaic/2-mosaico.jpg"
+                            media="(min-width: 200px)" type="image/jpeg" / />
+                        <img class="lazyload" height="1080" width="1920" role="presentation"
+                            data-src="{{{ cdn }}}/desktop/mosaic/2-mosaico.jpg"
+                            src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 1080 1920'%2F%3E" />
+
+                    </picture>
+
+                    <picture class="mosaic-item lazy">
+
+                        <source data-srcset="{{{ cdn }}}/desktop/mosaic/3-mosaico.webp"
+                            media="(min-width: 600px)" type="image/webp" />
+                        <source data-srcset="{{{ cdn }}}/desktop/mosaic/3-mosaico.jpg"
+                            media="(min-width: 600px)" type="image/jpeg" />
+                        <source data-srcset="{{{ cdn }}}/mobile/mosaic/3-mosaico.webp"
+                            media="(min-width: 200px)" type="image/webp" />
+                        <source data-srcset="{{{ cdn }}}/mobile/mosaic/3-mosaico.jpg"
+                            media="(min-width: 200px)" type="image/jpeg" />
+                        <img class="lazyload" height="1080" width="592" role="presentation"
+                            data-src="{{{ cdn }}}/desktop/mosaic/3-mosaico.jpg"
+                            src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 1080 592'%2F%3E" />
+                    </picture>
+
+                    <picture class="mosaic-item lazy">
+
+                        <source data-srcset="{{{ cdn }}}/desktop/mosaic/4-mosaico.webp"
+                            media="(min-width: 600px)" type="image/webp" />
+                        <source data-srcset="{{{ cdn }}}/desktop/mosaic/4-mosaico.jpg"
+                            media="(min-width: 600px)" type="image/jpeg" />
+                        <source data-srcset="{{{ cdn }}}/mobile/mosaic/4-mosaico.webp"
+                            media="(min-width: 200px)" type="image/webp" />
+                        <source data-srcset="{{{ cdn }}}/mobile/mosaic/4-mosaico.jpg"
+                            media="(min-width: 200px)" type="image/jpeg" />
+
+                        <img class="lazyload" height="1080" width="1325" role="presentation"
+                            data-src="{{{ cdn }}}/desktop/mosaic/4-mosaico.jpg"
+                            src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 1080 1325'%2F%3E" />
+
+                    </picture>
+
+                    <div class="mosaic-item full-width centered mosaic-video">
+                        <video muted loop preload="none">
+                            <source data-desktop="{{{ cdn }}}/desktop/mosaic/video-14-mosaico.webm"
+                                type='video/webm; codecs="vp8, vorbis"' />
+                            <source data-desktop="{{{ cdn }}}/desktop/mosaic/video-14-mosaico.mp4"
+                                type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                        </video>
+                    </div>
+
+                    <picture class="mosaic-item lazy">
+
+                        <source data-srcset="{{{ cdn }}}/desktop/mosaic/5-mosaico.webp"
+                            media="(min-width: 600px)" type="image/webp" />
+                        <source data-srcset="{{{ cdn }}}/desktop/mosaic/5-mosaico.jpg"
+                            media="(min-width: 600px)" type="image/jpeg" />
+                        <source data-srcset="{{{ cdn }}}/mobile/mosaic/5-mosaico.webp"
+                            media="(min-width: 200px)" type="image/webp" />
+                        <source data-srcset="{{{ cdn }}}/mobile/mosaic/5-mosaico.jpg"
+                            media="(min-width: 200px)" type="image/jpeg" />
+                        <img class="lazyload" height="1076" width="1105" role="presentation"
+                            data-src="{{{ cdn }}}/desktop/mosaic/5-mosaico.jpg"
+                            src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 1076 1105'%2F%3E" />
+
+
+                    </picture>
+
+                    <picture class="mosaic-item lazy">
+
+                        <source data-srcset="{{{ cdn }}}/desktop/mosaic/6-mosaico.webp"
+                            media="(min-width: 600px)" type="image/webp" />
+                        <source data-srcset="{{{ cdn }}}/desktop/mosaic/6-mosaico.jpg"
+                            media="(min-width: 600px)" type="image/jpeg" />
+                        <source data-srcset="{{{ cdn }}}/mobile/mosaic/6-mosaico.webp"
+                            media="(min-width: 200px)" type="image/webp" />
+                        <source data-srcset="{{{ cdn }}}/mobile/mosaic/6-mosaico.jpg"
+                            media="(min-width: 200px)" type="image/jpeg" />
+
+                        <img class="lazyload" height="530" width="810" role="presentation"
+                            data-src="{{{ cdn }}}/desktop/mosaic/6-mosaico.jpg"
+                            src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 530 810'%2F%3E" />
+
+                    </picture>
+
+                    <picture class="mosaic-item lazy">
+
+                        <source data-srcset="{{{ cdn }}}/desktop/mosaic/7-mosaico.webp"
+                            media="(min-width: 600px)" type="image/webp" />
+                        <source data-srcset="{{{ cdn }}}/desktop/mosaic/7-mosaico.jpg"
+                            media="(min-width: 600px)" type="image/jpeg" />
+                        <source data-srcset="{{{ cdn }}}/mobile/mosaic/7-mosaico.webp"
+                            media="(min-width: 200px)" type="image/webp" />
+                        <source data-srcset="{{{ cdn }}}/mobile/mosaic/7-mosaico.jpg"
+                            media="(min-width: 200px)" type="image/jpeg" />
+
+                        <img class="lazyload" height="530" width="810" role="presentation"
+                            data-src="{{{ cdn }}}/desktop/mosaic/7-mosaico.jpg"
+                            src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 530 810'%2F%3E" />
+                    </picture>
+
+                    <picture class="mosaic-item lazy">
+                        <img class="lazyload" height="1080" width="1920" role="presentation"
+                            data-src="{{{ cdn }}}/desktop/mosaic/8-mosaico.jpg"
+                            src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 1080 1920'%2F%3E" />
+
+
+                        <source data-srcset="{{{ cdn }}}/desktop/mosaic/8-mosaico.webp"
+                            media="(min-width: 600px)" type="image/webp" />
+                        <source data-srcset="{{{ cdn }}}/desktop/mosaic/8-mosaico.jpg"
+                            media="(min-width: 600px)" type="image/jpeg" />
+                        <source data-srcset="{{{ cdn }}}/mobile/mosaic/8-mosaico.webp"
+                            media="(min-width: 200px)" type="image/webp" />
+                        <source data-srcset="{{{ cdn }}}/mobile/mosaic/8-mosaico.jpg"
+                            media="(min-width: 200px)" type="image/jpeg" />
+
+                    </picture>
+
+                    <picture class="mosaic-item lazy">
+                        <source data-srcset="{{{ cdn }}}/desktop/mosaic/9-mosaico.webp"
+                            media="(min-width: 600px)" type="image/webp" />
+                        <source data-srcset="{{{ cdn }}}/desktop/mosaic/9-mosaico.jpg"
+                            media="(min-width: 600px)" type="image/jpeg" />
+                        <source data-srcset="{{{ cdn }}}/mobile/mosaic/9-mosaico.webp"
+                            media="(min-width: 200px)" type="image/webp" />
+                        <source data-srcset="{{{ cdn }}}/mobile/mosaic/9-mosaico.jpg"
+                            media="(min-width: 200px)" type="image/jpeg" />
+                        <img class="lazyload" height="1080" width="772" role="presentation"
+                            data-src="{{{ cdn }}}/desktop/mosaic/9-mosaico.jpg" width="772" height="1080"
+                            src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 1080 772'%2F%3E" />
+                    </picture>
+                    <picture class="mosaic-item lazy">
+
+                        <source data-srcset="{{{ cdn }}}/desktop/mosaic/10-mosaico.webp"
+                            media="(min-width: 600px)" type="image/webp" />
+                        <source data-srcset="{{{ cdn }}}/desktop/mosaic/10-mosaico.jpg"
+                            media="(min-width: 600px)" type="image/jpeg" />
+                        <source data-srcset="{{{ cdn }}}/mobile/mosaic/10-mosaico.webp"
+                            media="(min-width: 200px)" type="image/webp" />
+                        <source data-srcset="{{{ cdn }}}/mobile/mosaic/10-mosaico.jpg"
+                            media="(min-width: 200px)" type="image/jpeg" />
+
+                        <img class="lazyload" height="1080" width="1145" role="presentation"
+                            data-src="{{{ cdn }}}/desktop/mosaic/10-mosaico.jpg"
+                            src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 1080 1145'%2F%3E" />
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <section class="chapter video-ogier-s">
+            <div>
+                <div class="lettering">
+                    <div class="lettering-item">
+
+                        <p class="chapter-text-copy">
+                            Jéssica consegue deixar a boate.
+                        </p>
+                        <p class="chapter-text-copy">
+                            Vinícius sai, mas volta para ajudar.
+                        </p>
+                        <br />
+                        <p class="chapter-text-copy">Ela tenta entrar outra vez e é impedida. Depois, liga para o pai.</p>
+                    </div>
+                </div>
+
+                <div class="stage-wrapper">
+                    <div class="placeholder">
+                        <canvas class="stage" data-scene="video-ogier"></canvas>
+                    </div>
+                    <div class="legends">
+                        <span class="media-credits legend legend-item" data-time="5,120">Foto Germano Rorato</span>
+                        <div class="legend legend-item" data-posy="middle" data-posx="middle" data-time="45,95">
+                            <div class="legend-body center margin-t-40">
+                                <p>
+                                    <span class="text-selection">
+                                        Ogier chega ao local e se desespera. <br />
+                                        Ele não encontra o filho, mas descobre
+                                        que o rapaz foi visto ajudando nos resgates.
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <section class="chapter jessica-posts">
+            <div class="facebook-post sticky">
+
+                <div class="lettering">
+                    <div class="lettering-item">
+                        <p class="chapter-text-copy">
+                            <span class="text-selection">O tempo passa e Vinícius não aparece.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <picture class="pin lazy">
+                    <source data-srcset="{{{ cdn }}}/desktop/jessica-fb-posts/fb-01.webp"
+                        type="image/webp" />
+                    <img class="lazyload" height="413" width="808" role="presentation"
+                        data-src="{{{ cdn }}}/desktop/jessica-fb-posts/fb-01.png"
+                        src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 413 808'%2F%3E" />
+                </picture>
+
+                <div class="lettering">
+                    <div class="lettering-item not-sticky">
+                        <p class="chapter-text-copy">
+                            <span class="text-selection">Vinícius retira 14 pessoas</span>
+                        </p>
+                        <p class="chapter-text-copy">
+                            <span class="text-selection">da boate, mas, na última tentativa,</span>
+                        </p>
+                        <p class="chapter-text-copy">
+                            <span class="text-selection">não consegue voltar. É socorrido.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="facebook-post sticky">
+
+                <picture class="pin lazy">
+
+                    <source data-srcset="{{{ cdn }}}/desktop/jessica-fb-posts/fb-02.webp"
+                        type="image/webp" />
+
+
+                    <img class="lazyload" height="413" width="808" role="presentation"
+                        data-src="{{{ cdn }}}/desktop/jessica-fb-posts/fb-02.png"
+                        src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 413 808'%2F%3E" />
+                </picture>
+
+                <div class="lettering">
+
+                    <div class="lettering-item  not-sticky">
+                        <p class="chapter-text-copy">
+                            <span class="text-selection">
+                                No Hospital de Caridade, os médicos tentam reanimar Vinícius.
+                                Ele não resiste.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="facebook-post sticky">
+                <picture class="pin lazy">
+                    <source data-srcset="{{{ cdn }}}/desktop/jessica-fb-posts/fb-03.webp"
+                        type="image/webp" />
+                    <img class="lazyload" height="413" width="808" role="presentation"
+                        data-src="{{{ cdn }}}/desktop/jessica-fb-posts/fb-03.png"
+                        src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 413 808'%2F%3E" />
+                </picture>
+            </div>
+
+
+            <div class="facebook-post">
+                <picture class="pin lazy">
+                    <source data-srcset="{{{ cdn }}}/desktop/jessica-fb-posts/fb-04.webp"
+                        type="image/webp" />
+                    <img class="lazyload" height="413" width="808" role="presentation"
+                        data-src="{{{ cdn }}}/desktop/jessica-fb-posts/fb-04.png"
+                        src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 413 808'%2F%3E" />
+                </picture>
+            </div>
+
+
+        </section>
+
+        <section class="chapter banner">
+            <div class="stage-wrapper">
+                <div class="placeholder">
+                    <canvas class="stage" data-scene="banner-fotos-vitimas"></canvas>
+                </div>
+                <div class="legends">
+                    <div class="legend legend-item" data-posy="top" data-posx="right" data-time="8,46">
+                        <div class="legend-body">
+                            <h2 class="chapter-text-copy">
+                                <span class="text-selection">
+                                    Vinícius tinha 1,99m de altura.
+                                    Era estudante de Educação Física, apaixonado por rúgbi.
+                                    Fazia trabalho voluntário.
+                                    Tinha o dom de cultivar amigos.
+                                </span>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="legend legend-item" data-posy="top" data-posx="right" data-time="70,100">
+                        <div class="legend-body">
+                            <h2 class="chapter-text-copy">
+                                <span class="text-selection">
+                                    242 jovens morreram em razão da tragédia.
+                                </span>
+                            </h2>
+                        </div>
+
+                    </div>
+
+
+                    <div class="legend legend-item" data-posy="top" data-posx="right" data-time="100,120">
+                        <!-- <div class="legend-body">
+                            <h2 class="chapter-text-copy">
+                                <span class="text-selection">
+                                    Mais de 600 pessoas conseguiram sair.
+                                </span>
+                            </h2>
+                        </div> -->
+
+                        <div class="legend-body">
+                            <h2 class="chapter-text-copy">
+                                <span class="text-selection">
+                                    Muitas terão sequelas pelo resto da vida.
+                                </span>
+                            </h2>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="chapter">
+
+            <header class="chapter-text lettering">
+                <div class="lettering-item">
+                    <h1 class="chapter-text-title upper">o luto</h1>
+                </div>
+            </header>
+
+            <div class="gallery ">
+                <div class="grid-gallery grid">
+                    <picture class="gallery-item lazy">
+
+                        <source data-srcset="{{{ cdn }}}/desktop/gallery/3-galeria.webp" media="(min-width: 600px)" type="image/webp" />
+                        <source data-srcset="{{{ cdn }}}/desktop/gallery/3-galeria.jpg" media="(min-width: 600px)" type="image/jpeg" />
+                        <source data-srcset="{{{ cdn }}}/mobile/gallery/3-galeria.webp" media="(min-width: 200px)" type="image/webp" />
+                        <source data-srcset="{{{ cdn }}}/mobile/gallery/3-galeria.jpg" media="(min-width: 200px)" type="image/jpeg" />
+                        <img class="lazyload" height="1080" width="1920" role="presentation"
+                            data-src="{{{ cdn }}}/desktop/gallery/3-galeria.jpg"
+                            src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 1080 1920'%2F%3E" />
+
+                        <span class="media-credits">Jean Pimentel</span>
+                        <div class="gallery-legend chapter-text-copy">
+                            <h4>
+                                <span class="text-selection">O corpo de Vinícius é enterrado no
+                                    Cemitério Municipal de Santa Maria</span>
+                            </h4>
+                        </div>
+                    </picture>
+
+                    <picture class="gallery-item lazy">
+                        <source data-srcset="{{{ cdn }}}/desktop/gallery/1-galeria.webp" type="image/webp"
+                            media="(min-width: 600px)" />
+                        <source data-srcset="{{{ cdn }}}/desktop/gallery/1-galeria.jpg" type="image/jpeg"
+                            media="(min-width: 600px)" />
+                        <source data-srcset="{{{ cdn }}}/mobile/gallery/1-galeria.webp"
+                            media="(min-width: 200px)" type="image/webp" />
+                        <source data-srcset="{{{ cdn }}}/mobile/gallery/1-galeria.jpg"
+                            media="(min-width: 200px)" type="image/jpeg" />
+                        <img class="lazyload" height="1080" width="1032" role="presentation"
+                            data-src="{{{ cdn }}}/desktop/gallery/1-galeria.jpg"
+                            src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 1080 1032'%2F%3E" />
+                        <span class="media-credits">Emerson Souza</span>
+                    </picture>
+
+                    <picture class="gallery-item lazy">
+                        <source data-srcset="{{{ cdn }}}/desktop/gallery/2-galeria.webp"
+                            media="(min-width: 600px)" type="image/webp" />
+                        <source data-srcset="{{{ cdn }}}/desktop/gallery/2-galeria.jpg"
+                            media="(min-width: 600px)" type="image/jpeg" />
+                        <source data-srcset="{{{ cdn }}}/mobile/gallery/2-galeria.webp"
+                            media="(min-width: 200px)" type="image/webp" />
+                        <source data-srcset="{{{ cdn }}}/mobile/gallery/2-galeria.jpg"
+                            media="(min-width: 200px)" type="image/jpeg" />
+                        <img class="lazyload" height="1080" width="915" role="presentation"
+                            data-src="{{{ cdn }}}/desktop/gallery/2-galeria.jpg"
+                            src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 1080 915'%2F%3E" />
+
+                        <span class="media-credits">Lauro Alves</span>
+
+                    </picture>
+                    <!--
+                    <picture class="gallery-item lazy">
+
+                        <source data-srcset="{{{ cdn }}}/desktop/gallery/3-galeria.webp"
+                            media="(min-width: 600px)" type="image/webp" />
+                        <source data-srcset="{{{ cdn }}}/desktop/gallery/3-galeria.jpg"
+                            media="(min-width: 600px)" type="image/jpeg" />
+                        <source data-srcset="{{{ cdn }}}/mobile/gallery/3-galeria.webp"
+                            media="(min-width: 200px)" type="image/webp" />
+                        <source data-srcset="{{{ cdn }}}/mobile/gallery/3-galeria.jpg"
+                            media="(min-width: 200px)" type="image/jpeg" />
+                        <img class="lazyload" height="1080" width="1920" role="presentation"
+                            data-src="{{{ cdn }}}/desktop/gallery/3-galeria.jpg"
+                            src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 1080 1920'%2F%3E" />
+
+                        <span class="media-credits">Jean Pimentel</span>
+                        <div class="gallery-legend chapter-text-copy">
+                            <h4>
+                                <span class="text-selection">O corpo de Vinícius é enterrado no
+                                    Cemitério Municipal de Santa Maria</span>
+                            </h4>
+                        </div>
+                    </picture> -->
+
+
+
+                    <picture class="gallery-item lazy">
+
+                        <source data-srcset="{{{ cdn }}}/desktop/gallery/5-galeria.webp"
+                            media="(min-width: 600px)" type="image/webp" />
+                        <source data-srcset="{{{ cdn }}}/desktop/gallery/5-galeria.jpg"
+                            media="(min-width: 600px)" type="image/jpeg" />
+                        <source data-srcset="{{{ cdn }}}/mobile/gallery/5-galeria.webp"
+                            media="(min-width: 200px)" type="image/webp" />
+                        <source data-srcset="{{{ cdn }}}/mobile/gallery/5-galeria.jpg"
+                            media="(min-width: 200px)" type="image/jpeg" />
+
+                        <img class="lazyload" height="1080" width="791" role="presentation"
+                            data-src="{{{ cdn }}}/desktop/gallery/5-galeria.jpg"
+                            src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 1080 791'%2F%3E" />
+
+                        <span class="media-credits">Jean Pimentel</span>
+                    </picture>
+
+                    <picture class="gallery-item lazy">
+                        <source data-srcset="{{{ cdn }}}/desktop/gallery/4-galeria.webp" media="(min-width: 600px)" type="image/webp" />
+                        <source data-srcset="{{{ cdn }}}/desktop/gallery/4-galeria.jpg" media="(min-width: 600px)" type="image/jpeg" />
+                        <source data-srcset="{{{ cdn }}}/mobile/gallery/4-galeria.webp" media="(min-width: 200px)" type="image/webp" />
+                        <source data-srcset="{{{ cdn }}}/mobile/gallery/4-galeria.jpg" media="(min-width: 200px)" type="image/jpeg" />
+                        <img class="lazyload" height="1080" width="1123" role="presentation"
+                            data-src="{{{ cdn }}}/desktop/gallery/4-galeria.jpg"
+                            src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 1080 1123'%2F%3E" />
+
+                        <span class="media-credits">Juliano Mendes</span>
+                    </picture>
+
+                    <div class="gallery-item full-width centered gallery-video">
+                        <video autoplay muted loop playsinline preload="none">
+                            <source data-desktop="{{{ cdn }}}/desktop/gallery/video-21-luto.webm"
+                                type='video/webm; codecs="vp8, vorbis"' />
+                            <source data-desktop="{{{ cdn }}}/desktop/gallery/video-21-luto.mp4"
+                                type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                        </video>
+                        <span class="media-credits">Fotos Ronald Mendes e Jean Pimentel</span>
+                    </div>
+
+                    <picture class="gallery-item lazy">
+                        <source data-srcset="{{{ cdn }}}/desktop/gallery/ogier-rezando.webp"
+                            type="image/webp" />
+                        <img class="lazyload" height="1080" width="1920" role="presentation"
+                            data-src="{{{ cdn }}}/desktop/gallery/ogier-rezando.jpg"
+                            src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 1080 1920'%2F%3E" />
+
+                        <div class="legend-title">
+                            <h4>Ogier reza pelo filho.</h4>
+                        </div>
+                        <span class="media-credits">Jean Pimentel</span>
+                    </picture>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="chapter depoiment letters">
+            <header class="chapter-text lettering">
+                <div class="lettering-item">
+                    <h1 class="chapter-text-title upper">A primeira carta</h1>
+                </div>
+                <div class="lettering-item">
+                    <p class="chapter-text-copy">
+                        Para enfrentar a dor, Ogier passa a escrever
+                        cartas endereçadas a Vinícius no Facebook.
+                    </p>
+                </div>
+            </header>
+
+            <picture class="facebook-posts ozier-facebook-post lazy">
+                <source data-srcset="{{{ cdn }}}/desktop/ozier-fb-post/fb-05.webp" type="image/webp" />
+                <img class="lazyload" data-src="{{{ cdn }}}/desktop/ozier-fb-post/fb-05.png" width="808"
+                    height="1083"
+                    src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 808 1083'%2F%3E" />
+            </picture>
+
+            <div class="video">
+                <div class="video-wrapper">
+                    <video controls="controls" preload="metadata" title="Precisamos seguir em frente">
+                        <source data-desktop="{{{ cdn }}}/desktop/depoiments/capitulo6.webm"
+                            data-mobile="{{{ cdn }}}/mobile/depoiments/precisamos_seguir_em_frente-1.webm"
+                            type='video/webm; codecs="vp8, vorbis"' />
+                        <source
+                            data-mobile="{{{ cdn }}}/mobile/depoiments/precisamos_seguir_em_frente-1.mp4"
+                            data-desktop="{{{ cdn }}}/desktop/depoiments/capitulo6.mp4"
+                            type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                        <track default label="Português" kind="subtitles" srclang="pt" src="./assets/captions/capitulo6.vtt" />
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section class="chapter depoiment letters">
+            <header class="chapter-text lettering">
+                <div class="lettering-item">
+                    <h1 class="chapter-text-title upper">A força de Jéssica</h1>
+                </div>
+                <div class="lettering-item">
+                    <p class="chapter-text-copy">
+                        Na volta do enterro, Jéssica decide reagir. Graças a ela, a família retoma a vida.
+                    </p>
+                </div>
+
+            </header>
+
+            <div class="video">
+                <div class="video-wrapper">
+                    <video controls="controls" preload="metadata" title="Precisamos seguir em frente">
+                        <source
+                            data-mobile="{{{ cdn }}}/mobile/depoiments/precisamos_seguir_em_frente-2.webm"
+                            data-desktop="{{{ cdn }}}/desktop/depoiments/capitulo7.webm"
+                            type='video/webm; codecs="vp8, vorbis"' />
+                        <source
+                            data-mobile="{{{ cdn }}}/mobile/depoiments/precisamos_seguir_em_frente-2.mp4"
+                            data-desktop="{{{ cdn }}}/desktop/depoiments/capitulo7.mp4"
+                            type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                        <track default label="Português" kind="subtitles" srclang="pt" src="./assets/captions/capitulo7.vtt" />
+                    </video>
+                </div>
+            </div>
+
+        </section>
+
+        <!--
+        <section class="chapter depoiment letters">
+            <header class="chapter-text lettering">
+                <div class="lettering-item">
+                    <h1 class="chapter-text-title upper">Janeiro de 2020</h1>
+                </div>
+                <div class="lettering-item">
+                    <p class="chapter-text-copy">
+                        Vinícius teria se formado em Educação Física,
+                        na Faculdade Metodista de Santa Maria (Fames),
+                        em 17 de agosto de 2013. Hoje, seria professor.
+                    </p>
+                </div>
+            </header>
+            <div class="video">
+                <div class="video-wrapper">
+                    <video controls="controls" preload="metadata">
+                        <source
+                            data-mobile="{{{ cdn }}}/mobile/depoiments/precisamos_seguir_em_frente-3.webm"
+                            data-desktop="{{{ cdn }}}/desktop/depoiments/capitulo8.webm"
+                            type='video/webm; codecs="vp8, vorbis"' />
+                        <source
+                            data-mobile="{{{ cdn }}}/mobile/depoiments/precisamos_seguir_em_frente-3.mp4"
+                            data-desktop="{{{ cdn }}}/desktop/depoiments/capitulo8.mp4"
+                            type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                        <track default label="Português" kind="subtitles" srclang="pt" src="./assets/captions/capitulo8.vtt" />
+                    </video>
+                </div>
+            </div>
+        </section>
+        -->
+
+        <section class="chapter depoiment letters">
+            <header class="chapter-text lettering">
+                <div class="lettering-item">
+                    <h1 class="chapter-text-title upper">O Julgamento</h1>
+                </div>
+
+                <div class="lettering-item">
+                    <p class="chapter-text-copy">
+                        Passados sete anos, ninguém está
+                        preso pela tragédia na boate Kiss.
+                    </p>
+                </div>
+
+
+            </header>
+
+            <div class="video">
+                <div class="video-wrapper">
+                    <video controls="controls" preload="metadata" title="Precisamos seguir em frente"
+                        data-desk="{{{ cdn }}}/desktop/depoiments/frame_julgamento_horizontal.jpg" poster="{{{ cdn }}}/mobile/depoiments/frame_julgamento_vertical.jpg">
+                        <source
+                            data-mobile="{{{ cdn }}}/mobile/depoiments/precisamos_seguir_em_frente-4.webm"
+                            data-desktop="{{{ cdn }}}/desktop/depoiments/capitulo9.webm"
+                            type='video/webm; codecs="vp8, vorbis"' />
+                        <source
+                            data-mobile="{{{ cdn }}}/mobile/depoiments/precisamos_seguir_em_frente-4.mp4"
+                            data-desktop="{{{ cdn }}}/desktop/depoiments/capitulo9.mp4"
+                            type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                        <track default label="Português" kind="subtitles" srclang="pt" src="./assets/captions/capitulo9.vtt" />
+                    </video>
+                </div>
+            </div>
+
+            <div class="chapter-text lettering">
+                <div class="lettering-item">
+
+                    <p class="chapter-text-copy">
+                        O primeiro júri está marcado para
+                        16 de março de 2020, às 10h,
+                        no Centro de Convenções da
+                        Universidade Federal de Santa Maria.
+                    </p>
+                    <br />
+                    <p class="chapter-text-copy">
+                        Na data, será julgado Luciano Bonilha Leão,
+                        um dos integrantes da banda.
+                    </p>
+                </div>
+
+
+                <div class="lettering-item">
+                    <p class="chapter-text-copy">
+                        Por decisão da Justiça, os outros três réus - Marcelo de Jesus dos Santos, vocalista do grupo,
+                        Elissandro Spohr e Mauro
+                        Hoffmann, sócios da boate - serão julgados em Porto Alegre. A data ainda não está marcada.
+                    </p>
+                </div>
+
+
+                <div class="lettering-item">
+                    <p class="chapter-text-copy">
+                        O Ministério Público pediu para manter o caso em Santa Maria, mas não conseguiu. Então, solicitou à
+                        Justiça que todos os
+                        réus fossem julgados juntos, em Porto Alegre. Mais uma vez, a resposta foi negativa. Até a publicação
+                        desta reportagem, a
+                        decisão inicial segue mantida.
+                    </p>
+                </div>
+
+
+                <div class="lettering-item">
+                    <p class="chapter-text-copy">
+                        O processo criminal tem quatro réus: Elissandro Spohr, o Kiko, e Mauro Hoffmann, sócios da casa noturna, Marcelo de
+                        Jesus dos Santos e Luciano Bonilha Leão, integrantes da banda Gurizada Fandangueira. Eles respondem por 242 homicídios e
+                        636 tentativas de homicídio, com dolo eventual (quando se assume o risco de matar).
+                    </p>
+                </div>
+
+
+                <div class="lettering-item">
+                    <p class="chapter-text-copy">
+                        Até a publicação desta reportagem, o júri .................... está marcado para .................
+                    </p>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section class="credits">
+
+            <header class="last-title">
+                <h1>ESTA HISTÓRIA NÃO TERMINA AQUI.</h1>
+                <p>GaúchaZH seguirá acompanhando os desdobramentos da tragédia na boate Kiss até o fim.</p>
+            </header>
+
+
+            <div class="video-footer">
+                <video autoplay muted playsinline preload="none">
+                    <source data-mobile="{{{ cdn }}}/mobile/final/final.webm"
+                        data-desktop="{{{ cdn }}}/desktop/final/video.webm"
+                        type='video/webm; codecs="vp8, vorbis"' />
+                    <source data-mobile="{{{ cdn }}}/mobile/final/final.mp4"
+                        data-desktop="{{{ cdn }}}/desktop/final/video.mp4"
+                        type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                </video>
+            </div>
+
+            <div class="credits-wrp">
+                <article class="credit-item">
+                    <h4>Reportagem e roteiro</h4>
+                    <h2>Juliana Bublitz</h2>
+                </article>
+                <article class="credit-item">
+                    <h4>Imagens e roteiro</h4>
+                    <h2>Jefferson Botega</h2>
+                </article>
+                <article class="credit-item">
+                    <h4>Edição de Vídeos</h4>
+                    <h2>Bruna O'Donnell</h2>
+                </article>
+                <article class="credit-item">
+                    <h4>Design</h4>
+                    <h2>
+                        Bruna Lora
+                        <br />Paola Gandolfo
+                    </h2>
+                </article>
+                <article class="credit-item">
+                    <h4>Infográfico 3D</h4>
+                    <h2>Jonatan
+                        Sarmento</h2>
+                </article>
+                <article class="credit-item">
+                    <h4>Animação</h4>
+                    <h2>Luan Ott</h2>
+                </article>
+                <article class="credit-item">
+                    <h4>Programação</h4>
+                    <h2>Fuerza Studio</h2>
+                </article>
+                <article class="credit-item">
+                    <h4>Supervisão</h4>
+                    <h2>Rafael Ocaña</h2>
+                </article>
+            </div>
+
+        </section>
+
+        <div class="scrolling-icon">
+            <svg xml:space="preserve" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 100 100" stroke="currentColor">
+                <circle class="st0" cx="50" cy="50" r="36" />
+                <path class="st0" d="M62.5 30.2L50 42.7 37.5 30.2M62.5 44.2L50 56.8 37.5 44.2M62.5 58.3L50 70.8 37.5 58.3" />
+            </svg>
+            <span>Deslize para navegar</span>
+        </div>
+
+    </main>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">
+                You are using an <strong>outdated</strong> browser. Please
+                <a href="#">upgrade your browser</a> to improve your experience.
+            </p>
+        <![endif]-->
+    <div class="preload">
+        <input class="counter" type="text" />
+    </div>
+
+    <div id="progressbar"></div>
+
+
+    <button type="button" class="hidden play-video">
+        <svg x="0" y="0" viewBox="0 0 100 100"  xml:space="preserve">
+            <circle class="st1" cx="50" cy="50" r="36.2" />
+            <path class="st1" d="M42.1 35.3L63.9 50 42.1 64.7z" />
+        </svg>
+    </button>
+
+    <script src="./scripts/index.js" async defer></script>
+
+    <script type="text/javascript">
+
+        var _gaq = (_gaq || []);
+
+        _gaq.push(['_setAccount', 'UA-3469445-1']);
+        _gaq.push(['_setDomainName', '.clicrbs.com.br']);
+        _gaq.push(['_setAllowHash', false]);
+        _gaq.push(['_setLocalGifPath', 'https://www.clicrbs.com.br/refresh/urchin.gif']);
+        _gaq.push(['_setLocalRemoteServerMode']);
+        _gaq.push(['_trackPageview']);
+        _gaq.push(['_setAllowLinker', true]);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https://' == document.location.protocol ? 'https://' : 'https://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+</body>
+
+</html>

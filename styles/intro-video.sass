@@ -1,0 +1,111 @@
+.lettering-intro
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 99
+    height: 100vh
+    width: 100vw
+    will-change: transform
+    backface-visibility: hidden
+    perspective-origin: 100% 100%
+    transform-style: preserve-3d
+    -webkit-transform-style: preserve-3d
+    display: flex
+    justify-content: center
+    align-items: center
+    opacity: 0
+    pointer-events: none
+    transition: 0.3s var(--move) opacity
+    &.active
+        opacity: 1
+    &.hide
+        opacity: 0
+    .lettering-wrp
+        display: flex
+        justify-content: center
+        align-items: flex-end
+        flex-direction: column
+        h1
+            position: relative
+            margin: 0
+            color: var(--color-white)
+            text-transform: uppercase
+            text-align: center
+            text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.6)
+            transform-style: preserve-3d
+            backface-visibility: visible
+            display: block
+            span
+                font-weight: 300
+                font-size: 2.4em
+                line-height: 1em
+                display: block
+            strong
+                font-weight: 700
+                display: block
+                font-size: 7.2em
+                line-height: 0.8em
+        .intro-copy
+            color: var(--color-white)
+            font-size: 2.1em
+            max-width: 440px
+            text-align: right
+            text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.6)
+            margin: 15px 2px 0 0
+
+    @media (min-width: 320px) and (max-width: 480px)
+        .lettering-wrp
+            max-width: calc(100% - 50px)
+            .intro-copy
+                font-size: 6.5vw
+            h1
+                span
+                    font-size: 10vw
+                strong
+                    font-size: 30vw
+
+
+
+.scrolling-icon
+  position: fixed
+  bottom: 25px
+  display: flex
+  align-items: center
+  justify-content: center
+  color: rgba(white, 1)
+  transition: 0.4s var(--enter) opacity, 0.4s var(--move) transform
+  transform: translate3d(-50%, 0, 0)
+  pointer-events: none
+  transform-style: preserve-3d
+  -webkit-transform-style: preserve-3d
+  z-index: 99
+
+  &:not(.aside)
+    left: 50%
+  &:not(.active)
+    opacity: 0
+    transform: translate3d(-50%, -20px, 0)
+  &.aside
+    opacity: 0.5
+    right: 0
+    transform: translate3d(-5px, 20px, 0)
+    span
+      opacity: 0
+      display: none
+
+  span
+    margin-left: 6px
+    font-weight: 700
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.6)
+  svg
+    stroke: rgba(white, 1)
+    z-index: 99
+    height: 40px
+    width: 40px
+    fill: none
+    stroke: #fff
+    stroke-width: 5
+    stroke-linecap: round
+    stroke-linejoin: round
+    stroke-miterlimit: 10
+

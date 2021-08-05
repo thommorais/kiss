@@ -1,0 +1,96 @@
+.mosaic-video
+  video
+    width: 100%
+    height: auto
+.mosaic
+  position: relative
+
+.grid-mosaic
+    @include mosaic-grid
+    picture
+      position: relative
+      overflow: hidden
+    .mosaic-item
+      position: relative
+    picture.mosaic-item
+      position: relative
+      img
+        display: block
+        width: 100%
+        height: auto
+
+@media (min-width: 541px)
+  div.mosaic-item
+    grid-column: 1 / 123
+  div.mosaic-item.full-width
+    grid-column: 1 / var(--columns)
+    grid-row: 6 / 8
+  picture.mosaic-item
+    &:first-of-type
+      grid-column: 123 / var(--columns)
+    &:nth-of-type(2)
+      grid-column: 1 / var(--columns)
+      grid-row: 2 / 4
+    &:nth-of-type(3)
+      grid-column: 1 / 112
+      grid-row: 4 / 6
+    &:nth-of-type(4)
+      grid-column: 112 / var(--columns)
+      grid-row: 4 / 6
+    &:nth-of-type(5)
+      grid-column: 1 / 208
+      grid-row: 8 / 10
+    &:nth-of-type(6)
+      grid-column: 208 / var(--columns)
+      grid-row: 8 / 9
+    &:nth-of-type(7)
+      grid-column: 208 / var(--columns)
+      grid-row:  9 / 10
+    &:nth-of-type(8)
+      grid-column: 1 / var(--columns)
+      grid-row:  10 / 12
+    &:nth-of-type(9)
+      grid-column: 1 / 146
+      grid-row:  12 / 14
+    &:nth-of-type(10)
+      grid-column: 146 / var(--columns)
+      grid-row:  12 / 14
+
+@media (min-width: 320px) and (max-width: 540px)
+    div.mosaic-item
+      grid-column: 1 / 55
+      grid-row: 1 / 4
+    div.mosaic-item.full-width
+        grid-column: 1 / var(--columns)
+        grid-row: 6 / 8
+    picture.mosaic-item
+      &:first-of-type
+        grid-column: 55 / var(--columns)
+        grid-row: 1 / 2
+      &:nth-of-type(2)
+        grid-column: 55 / var(--columns)
+        grid-row: 2 / 4
+      &:nth-of-type(3)
+        grid-column: 1 / 38
+        grid-row: 4 / 6
+      &:nth-of-type(4)
+        grid-column: 38 / var(--columns)
+        grid-row: 4 / 6
+      &:nth-of-type(5)
+        grid-column: 1 /58
+        grid-row: 8 / 12
+      &:nth-of-type(6)
+        grid-column: 58 / var(--columns)
+        grid-row: 8 / 10
+      &:nth-of-type(7)
+        grid-column: 58 / var(--columns)
+        grid-row: 10 / 12
+      &:nth-of-type(8)
+        grid-column: 1 / var(--columns)
+        grid-row: 12 / 14
+      &:nth-of-type(9)
+        grid-column: 1 / 49
+        grid-row: 14 / 16
+      &:nth-of-type(10)
+        grid-column:  49 / var(--columns)
+        grid-row: 14 / 16

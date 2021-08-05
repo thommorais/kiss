@@ -1,0 +1,195 @@
+.credits
+    position: relative
+    min-height: 100vh
+    &.active
+        &::before
+            opacity: 0
+            pointer-events: none
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100vw
+        height: 100vh
+        z-index: 9
+        transition: 0.5s opacity linear
+        transition: 0.5s opacity var(--enter)
+        background: black
+    .last-title
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        z-index: 99
+        color: white
+        min-width: 100%
+        text-align: center
+        transition: 0.5s opacity var(--enter)
+        h1
+            @extend .chapter-text-title
+            min-width: 100%
+        p
+            margin: 0
+            font-size: 24px
+    .video
+        height: 100vh
+        overflow: hidden
+    video
+        position: absolute
+        margin: 0 auto
+        min-width: 100vw
+        min-height: 100vh
+        height: auto
+        width: auto
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+        object-fit: cover
+    &-wrp
+        position: absolute
+        bottom: 80px
+        width: calc(100% - 30px)
+        left: 15px
+        display: grid
+        @media (max-width: 768px)
+            grid-template-columns: repeat(2, 1fr)
+            row-gap: 45px
+            .credit-item
+                h4
+                    font-size: 18px
+                h2
+                    font-size: 28px
+        @media (min-width: 768px) and (max-width: 1439px)
+            grid-template-columns: repeat(4, 1fr)
+            justify-content: space-between
+            row-gap: 45px
+        @media (min-width: 1440px)
+            grid-template-columns: repeat(8, 1fr)
+            grid-gap: 10px
+            justify-content: space-between
+    &.show-credits
+        .credit-item
+            transform: translate3d(0, 0, 0)
+            opacity: 1
+    .credit-item
+        color: var(--color-white)
+        font-family: 'Barlow Condensed', sans-serif
+        text-align: center
+        text-shadow: 0 0 1px rgba(#000, 1)
+        transform: translate3d(0, 10px, 0)
+        opacity: 0
+        @for $i from 1 through 8
+            &:nth-child(3n + #{$i})
+                transition: 1s $i * 0.05s transform  var(--move), opacity 2.5s $i * 0.05s var(--enter)
+        h4
+            text-transform: uppercase
+            margin: 0 0 5px
+            font-size: 22px
+        h2
+            margin: 0
+            font-weight: normal
+            font-size: 32px
+            line-height: 1.1em
+        @media (max-width: 768px)
+            h4
+                font-size: 16px
+            h2
+                font-size: 24px
+
+.media-credits
+    position: absolute
+    z-index: 2
+    color: white
+    display: flex
+    font-size: rem(14px)
+    letter-spacing: 0.2pt
+    text-transform: uppercase
+    color: var(--color-white)
+    font-family: 'Barlow Condensed', sans-serif
+    opacity: 0.7
+    padding: 15px 10px
+    @media (min-width: 320px) and (max-width: 540px)
+        font-size: rem(12px)
+
+.grid-mosaic
+    .mosaic-video
+      .media-credits
+        top: 0
+        left: 0
+
+    picture.mosaic-item
+      &:first-of-type
+        .media-credits
+          top: 0
+          right: 0
+      div.mosaic-item
+        .media-credits
+          top: 0
+          left: 0
+      div.mosaic-item.full-width
+        .media-credits
+          bottom: 0
+          left: 0
+          top: unset
+
+.grid-gallery
+    .gallery-legend
+        div.gallery-item
+            .media-credits
+                left: 0
+                top: 0
+    .gallery-item.full-width
+        position: relative
+        .media-credits
+            left: 0
+            top: 0
+
+picture.gallery-item
+    position: relative
+    .legend-title
+        h4
+            font-size: rem(40px)
+            font-weight: 300
+            text-align: center
+            color: white
+            @media (max-width: 540px)
+                font-size: rem(30px)
+
+    &:first-of-type
+        .media-credits
+            bottom: 0px
+            left: 0
+    &:nth-of-type(2)
+        .media-credits
+            bottom: 0px
+            left: 0
+    &:nth-of-type(3)
+        .media-credits
+            top: 0
+            left: 0
+            color: black
+    &:nth-of-type(4)
+        .media-credits
+            top: 0px
+            right: 0
+    &:nth-of-type(5)
+        .media-credits
+            top: 0px
+            right: 0
+    &:nth-of-type(6)
+        position: relative
+        img
+            margin: 0 auto
+            height: auto
+        .media-credits
+            top: 0
+            color: white
+            text-shadow: 1px 0 0 rgba(0, 0, 0, 0.6)
+
+@media (min-width: 541px)
+    picture.gallery-item
+        &:nth-of-type(6)
+            .media-credits
+                left: 50%
+                transform: translate(100%)

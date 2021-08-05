@@ -1,0 +1,44 @@
+image: alpine:3.8
+
+stages:
+  - build
+  - deploy
+
+variables:
+  project: kiss
+  build_dir: dist
+
+Build:
+  stage: build
+  image: node:10.17-alpine
+  before_script:
+    - test ${CI_COMMIT_REF_NAME} = 'homolog' && printf "PUBLIC_URL=${HOMOLOG_URL}\nREACT_APP_API_URL=${NOHARM_API_URL}" > .env || true
+    - npm install
+  script:
+    - npm run build
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
+      - build/
+  artifacts:
+    expire_in: 30 mins
+    when: on_success
+    paths:
+      - node_modules/
+      - build/
+  only:
+    - homolog
+
+Homolog:
+  stage: deploy
+  before_script:
+    - apk update && apk upgrade && apk add --no-cache rsync git openssh-client
+    - mkdir -p ~/.ssh
+    - echo -e "$PRIVATE_KEY_HOMOLOG" > ~/.ssh/id_rsa
+    - chmod 600  ~/.ssh/id_rsa
+    - 'echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+  script:
+    - rsync -azv --info=progress2 -e "ssh -p 2225"  --chmod="D755,F644" --exclude="*.git*" --rsync-path="rsync" build/ www-data@149.56.14.111:/var/www/${project}.fuerzastudio.com/htdocs
+  only:
+    - homolog

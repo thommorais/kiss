@@ -1,0 +1,36 @@
+{
+  "name": "kiss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "http://gitlab.fuerzastudio.com/rbs/kiss.git",
+  "author": "thommorais <thommorais@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html -d build --public-url '.'"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-function-bind": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/runtime-corejs2": "^7.8.4",
+    "babel-polyfill": "^6.26.0",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-lazy": "^0.0.4",
+    "polyfills": "^2.1.1",
+    "redux-devtools-extension": "^2.13.8",
+    "sass": "^1.25.0"
+  },
+  "dependencies": {
+    "animation": "^0.1.3",
+    "gsap": "^3.1.1",
+    "intersection-observer": "^0.7.0",
+    "is-event-supported": "^1.0.1",
+    "is-mobile": "^2.2.1",
+    "parcel-plugin-inline-worker": "^0.1.0",
+    "posthtml-expressions": "^1.4.1",
+    "redux": "^4.0.5",
+    "webfontloader": "^1.6.28"
+  }
+}
